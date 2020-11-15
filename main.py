@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 def main():
-    protein = ReadProteinFromPDB('proteins/e5j9uG1_A.pdb')
+    protein = ReadProteinFromPDB('proteins/e3e59A1_AB.pdb')
     coordinatesToPlot = []
 
     for chain in protein:
@@ -16,7 +16,7 @@ def main():
         plt.scatter(coordinate[0], coordinate[1], 12)
     plt.xlim(-180, 180)
     plt.ylim(-180, 180)
-    plt.title('Ramachandran Plot for e5j9uG1_A')
+    plt.title('Ramachandran Plot for e3e59A1_AB.pdb')
     plt.ylabel('Psi')
     plt.xlabel('Phi')
     plt.show()
